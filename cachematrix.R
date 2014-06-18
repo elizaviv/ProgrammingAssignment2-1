@@ -1,16 +1,26 @@
 ## Initialization of a matrix which has to be inverted
-## MyMatrix <- matrix(runif(4), 2, 2)
 
-v <- makeCacheMatrix()
+print ("******Creating a nonsingular Matrix *******")
+print ("Creating MyMatrix and reseting i its inverted in cached memory")
 
-print ("Create a non singular matrix in your console typing for example:")
-print ("MyMatrix <- matrix(c(5, 1, 7, 4), 2, 2) or other non singular matrix)")
-## print (MyMatrix)
+        i <- makeCacheMatrix()
+        MyMatrix <- matrix(c(1,5,9,6), 2, 2) 
+        i$set(MyMatrix)
 
-v$set(MyMatrix)
+print (MyMatrix)
 
-print ("Then type cacheSolve(x) to solve the inverse matrix first time")
-print ("Next time you type cacheSolve(x) the same inverted matrix will be returned")
+print ("**************************************************")
+print ("If you want to change MyMatrix you should type")
+print ("take care it is a nonsingular matrix")
+print ("i <- makeCacheMatrix()")
+print ("MyMatrix <- matrix (c(?, ?, ?, ?), 2, 2))")
+print ("i$set(MyMatrix)")
+print ("**************************************************")
+
+
+
+print ("Type cacheSolve(i) to solve the inverse matrix first time")
+print ("Next time you type cacheSolve(i) the same inverted matrix will be returned")
 ## print ("If you want to change the matrix source again the code for initialitation")
 
 ##  Caching the Inverse of a matrix
